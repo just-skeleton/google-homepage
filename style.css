@@ -3,11 +3,7 @@ body {
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
 }
-
-ul {
-    list-style-type: none;
-}
-
+/* Top section */
 .top-list {
     position: relative;
     top: 100px;
@@ -16,60 +12,16 @@ ul {
     display: inline-block;
 }
 
-.google-logo {
-    
-    position: absolute;
-  top: 0;
-  bottom: 125px;
-  left: 0;
-  right: 0;
-  margin: auto;
-    width: 22%;
-}
-
-.google-profile {
-    display: block;
-    position: absolute;
-    top: 4px;
-    right: 18px;
-    width: 3.2%;
-}
-
-.google-services {
-display: block;
-position: absolute;
-top: 18px;
-right: 70px;
-width: 2.2%;
-height: 4%;
-}
-
-input[type=search] {
-    border-radius: 20px;
-    border: lightgrey 1px solid ;
-    position: relative;
-    top: 325px;
-    left: 355px;
-    width: 550px;
-    height: 40px;
-    -webkit-tap-highlight-color: transparent;
-    border-radius: 40px;
-    
-} 
-
-input:hover {
-    box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.15);
-    transform: translate(-50%, -50%);
-    background: #ffffff;
-}
-
-
 .top a {
     display: inline;
     position: relative;
     top: 23px;
-    left: 1050px;
+    left: 1060px;
+    padding: 5px;
     color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 200;
+    font-size: 13px;
 }
 
 a {
@@ -83,20 +35,77 @@ a {
     background-color: transparent;
     text-decoration: none;
   }
-  
-   .middle button {
-       position: relative;
-       top: 380px;
-       right: 25px;
-       background-color: #f0f0f0;
-       color: #5f6368;
-       border-radius: 2.5px;
-       border: none;
-       width: 150px;
-       height: 38px;
-       font-family: Arial, Helvetica, sans-serif;
-       font-size: 15px;
-   }
+
+  a:hover {
+      text-decoration: #5f6368 underline;
+  }
+
+.google-profile {
+    display: block;
+    position: absolute;
+    top: 10px;
+    right: 18px;
+    width: 4%;
+}
+
+.google-services {
+display: block;
+position: absolute;
+top: 18px;
+right: 78px;
+width: 2.2%;
+height: 3.8%;
+opacity: 0.7;
+}
+
+/* Middle Section */
+
+.middle button {
+    position: relative;
+    top: 370px;
+    right: 74px;
+    margin: 4px;
+    background-color: #f0f0f0;
+    color: #5f6368;
+    border-radius: 2.5px;
+    border: none;
+    width: 150px;
+    height: 38px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
+
+.middle img {
+ position: absolute;
+ top: 28.5%;
+ left: 39.5%;
+ display: block;
+ margin-left: auto;
+ margin-right: auto;
+ width: 21%;
+
+}
+
+/* Search Bar */
+
+input[type=search] {
+    border-radius: 20px;
+    border: lightgrey 1px solid ;
+    position: relative;
+    top: 300px;
+    left: 355px;
+    width: 560px;
+    height: 43px;
+    -webkit-tap-highlight-color: transparent;
+    border-radius: 40px;
+    
+} 
+
+input[type=search]:hover {
+    box-shadow: 0px 0px 5px 3px rgba(0, 0, 0, 0.15);
+    
+}
+/* Footer */
 
    .location {
     background-color: #f0f0f0;
@@ -119,6 +128,8 @@ a {
        margin-top: 12px;
    }
 
+   /* Bottom navbar */
+
    .navbar {
     background-color: #f0f0f0;
     overflow: hidden;
@@ -139,11 +150,13 @@ a {
     font-weight: 500;
     font-size: 12.5px;
     margin-left: 20px;
-  
   }
 
+  .navbar a:hover {
+      text-decoration: #5f6368 underline;
+  }
   #privacy, #terms, #settings {
       text-align: right;
       position: relative;
-      right: 30px;
+      left: 600px;
   }
